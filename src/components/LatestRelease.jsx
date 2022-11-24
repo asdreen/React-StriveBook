@@ -13,7 +13,7 @@ class LatestRelease extends Component {
           <Col sm={12}>
             <Row>
               {genres.map((book) => (
-                <Col md={3} className="mb-3">
+                <Col key={book.asin}  md={3} className="mb-3">
                   <Card
                     style={{
                       width: "15rem",
